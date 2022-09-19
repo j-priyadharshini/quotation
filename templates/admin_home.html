@@ -1,0 +1,162 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+   
+     <meta name="viewport" content="initial-scale=10, width=device-width">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  
+     <link href="/static/styles.css" rel="stylesheet">
+<title>
+         
+		  Home page
+        </title>
+
+<style> 
+*{
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    overflow: hidden;
+    
+} 
+
+.sticky{
+    position: sticky;
+    top: 0%;
+    backdrop-filter: blur(5px);
+}
+#fx:hover {
+    background-color: rgba(236, 183, 9, 0.9);
+}
+input[type="text"], textarea {
+    background-color : rgb(249, 247, 243);
+}
+input[type="number"], textarea {
+    background-color : rgb(249, 247, 243);
+}
+input[type="password"], textarea {
+    background-color : rgb(249, 247, 243);
+}
+
+li
+{
+    list-style-type: none;
+    align-self: center;
+} 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+
+  text-decoration: none;
+ }
+
+ul {
+  list-style-type: none;
+  /* margin: 0; */
+  padding: 30px;
+  margin-bottom: 32px; 
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a:hover:active{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+
+}
+
+li ul{
+    padding: 4px;
+    margin: 2px;
+    margin-bottom: 32px; 
+   text-align: center;
+   display: none;
+  position: absolute;
+}
+
+li:hover ul
+{
+  display : block;
+  /* position: fixed; */
+  block-size: auto;
+  background-color: black;
+  color: green;
+  height:auto;
+
+}
+a, i
+{
+  color: white;
+}
+li ul li{
+  clear: none ;
+  border: 1pt;
+  margin: 3px; 
+  padding: 4px;
+  float: inherit;
+}
+.bg{
+        background-size: cover;
+        color: #000;
+        text-align: center;
+        font-size: larger;
+    }
+  </style>
+	</head>
+	<body class="loggedin bg">
+
+		<nav class="navtop">
+			<div>
+				<h1>Online Quotation System</h1>
+              <li>           
+              <a style="color: white;" href="{{ url_for('supplier_master') }}"><i style="color: white;" class="fa fa-quote-left"></i>Supplier Master</a>             
+              </li>
+              <li>             
+              <a style="color: white;" href="{{ url_for('item_master') }}"><i style="color: white;"  class="fa fa-shopping-cart"></i>Item Master</a>              
+             </li>
+              
+             <li>
+              <a style="color: white;" href="#" class= clickevent><i style="color: rgb(174, 119, 119);" class="fas fa-user"></i>{{name}}</a>
+              <ul>
+                  <li>                 
+
+                      <a style="color: white;"  href="{{ url_for('logout') }}"><i style="color: white;"  class="fas fa-sign-out-alt"></i>LogOut</a>
+                                         
+                  </li>
+              </ul>
+            </li>                  
+			</div>
+		</nav>
+		<div class="content">
+      <main class="container p-5">
+	</br></br></br></br></br>
+	<div align="center">
+	<div align="center" class="border">
+		<div class="header">
+			<h1 class="word">Index</h1>
+		</div></br></br></br>
+			<h1 class="bottom">
+				Hi {{session.username}}!!</br></br> Welcome to the index page...				
+			</h1></br></br></br>
+		
+	</div>
+	</div>
+
+      </main>
+		</div>
+	</body>
+</html> -->
+
+{% include "admin_layout.html" %}
+
+{% block body %}
+
+
+
+
+{% endblock %}
+

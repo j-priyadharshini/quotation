@@ -1,0 +1,7 @@
+To run:  python app.py
+
+The html comment tag <!-- ... --> does not work in a jinja template. 
+For commenting use the jinja comment tag ie, {# ... #}
+
+https://github.com/parwiz123/flask-crud-application-with-mysql/blob/master/templates/index2.html
+

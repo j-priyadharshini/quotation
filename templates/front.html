@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OQS-Home</title>
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    
+    </head>
+
+    <body class="home bg">
+        <nav class="navtop" class="fixed">
+			<div>
+
+            <h1>Online Quotation System</h1>                                
+            <li>             
+                <a   style="color: white(32, 28, 28);"  href="{{ url_for('contact_us') }}"><i class="fa fa-users" aria-hidden="true"></i>Contact Us</a>              
+            </li>   
+            <li>             
+                <a  style="color: white(32, 28, 28);" href="{{ url_for('help') }}"><i class="fa fa-info-circle"></i>Help</a>              
+            </li>   
+            <li>             
+            <a  style="color: white(32, 28, 28);" href="{{ url_for('login') }}"><i class="fas fa-user-circle"></i>Login</a>              
+            </li>
+                     
+			</div>
+
+		</nav>
+        <br><br><br><br><br><br><br><br>
+    <div class="grid2 footer well" style=" margin-top: 55px; text-align: center; padding-left: 1%;">
+        <div class="item bubble1"  >
+            <div class='col1'>
+            <h3 style=" color: #000;">Craftsman Automation</h3></div>
+        </div>
+        
+        <div  style="padding: 5px 50px; font-size: small;">
+            <div class="item bubble">
+               <p style="color: #000;">We started the journey in the year 1986 as a small scale industry in the southern Indian city of Coimbatore, has grown to become a leader in precision manufacturing in diverse fields. The years of experience we have in the field of Engineering has strengthen our commitment, determined customer focus, culture of quality, and unique emphasis on social responsibility empowers Team Craftsman Automation.</p> 
+                 </div>
+        </div>
+    </div>
+    </body>
+</html>
